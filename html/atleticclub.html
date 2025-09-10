@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Athletic Club Futebol Clube — Página Fã</title>
+  <meta name="description" content="Página informativa de fã sobre o Athletic Club Futebol Clube de Minas Gerais." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --preto:#000000;
+      --vermelho:#d90429;
+      --branco:#ffffff;
+      --cinza:#f4f6f8;
+      --texto:#1f2937;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Montserrat, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+      color:var(--texto);
+      background:var(--cinza);
+      line-height:1.6;
+    }
+    /* Cabeçalho fixo */
+    header{
+      position:sticky; top:0; z-index:50;
+      background:linear-gradient(90deg,var(--vermelho), var(--preto));
+      color:var(--branco);
+      padding:12px 16px;
+      box-shadow:0 4px 12px rgba(0,0,0,.15);
+    }
+    .nav{
+      max-width:1100px; margin:0 auto; display:flex; align-items:center; gap:16px;
+    }
+    .logo{
+      display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--branco);
+    }
+    .badge{
+      width:36px; height:36px; border-radius:50%;
+      border:2px solid #fff;
+      display:grid; place-items:center; font-weight:800;
+      background:var(--vermelho);
+      box-shadow:0 2px 6px rgba(0,0,0,.25) inset;
+    }
+    .nav a{
+      color:var(--branco); text-decoration:none; font-weight:600; opacity:.95;
+      padding:8px 10px; border-radius:10px;
+    }
+    .nav a:hover{background:rgba(255,255,255,.12)}
+    main{max-width:1100px; margin:24px auto; padding:0 16px}
+    .card{
+      background:var(--branco); border-radius:20px; padding:22px;
+      box-shadow:0 6px 20px rgba(0,0,0,.08); margin-bottom:18px;
+    }
+    .grid{display:grid; gap:16px}
+    @media (min-width:900px){ .grid-2{grid-template-columns:1.2fr .8fr} }
+    h1,h2{margin:.2rem 0 .6rem}
+    h1{font-size:clamp(1.6rem,2.2vw,2.2rem)}
+    h2{font-size:clamp(1.2rem,1.8vw,1.6rem); color:var(--vermelho)}
+    .tag{display:inline-block; background:#fde8e8; color:#7a0c0c; border:1px solid #f8b4b4;
+      padding:4px 8px; border-radius:999px; font-size:.85rem; font-weight:600; margin-right:6px}
+    .hero{display:grid; gap:12px; align-items:center}
+    .hero img{width:100%; height:280px; object-fit:cover; border-radius:18px; box-shadow:0 6px 20px rgba(0,0,0,.12)}
+    ul{padding-left:18px}
+    table{width:100%; border-collapse:collapse; overflow:hidden; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,.06)}
+    thead{background:#ffeaea}
+    th, td{padding:12px 14px; text-align:left; border-bottom:1px solid #edf2f7}
+    tbody tr:hover{background:#fdf2f2}
+    footer{text-align:center; padding:36px 16px; color:#4b5563}
+    .btn{display:inline-block; border:none; background:var(--vermelho);
+      color:#fff; padding:10px 14px; border-radius:12px; cursor:pointer; font-weight:700; text-decoration:none}
+    .btn:hover{background:#a1031e}
+    .chips{display:flex; flex-wrap:wrap; gap:8px; margin:.4rem 0 0}
+    .muted{opacity:.75}
+    .banner{
+      background:linear-gradient(135deg,#d90429 0%, #7a0c0c 100%);
+      color:white; border-radius:20px; padding:22px; box-shadow:0 8px 24px rgba(0,0,0,.18)
+    }
+    .pill{background:rgba(255,255,255,.15); padding:6px 10px; border-radius:999px; font-weight:700; margin-right:6px}
+    .divider{height:1px; background:#e5e7eb; margin:14px 0}
+  </style>
+</head>
+<body>
+  <!-- Navegação -->
+  <header>
+    <nav class="nav">
+      <a class="logo" href="#topo" aria-label="Voltar ao topo">
+        <span class="badge">AC</span>
+        <strong>Athletic Club</strong>
+      </a>
+      <div style="margin-left:auto; display:flex; gap:4px; flex-wrap:wrap">
+        <a href="#sobre">Sobre</a>
+        <a href="#simbolos">Cores & Símbolos</a>
+        <a href="#titulos">Títulos</a>
+        <a href="#estadio">Estádio</a>
+        <a href="#contato">Redes</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="topo">
+    <!-- Hero -->
+    <section class="card hero grid grid-2 banner">
+      <div>
+        <h1>Athletic Club Futebol Clube</h1>
+        <p class="muted">Conhecido como <b>Athletic Club</b> ou <b>Esquadrão de Aço</b>. Clube de São João del-Rei, Minas Gerais, fundado em <b>27 de junho de 1909</b>. Cores: <b>preto</b>, <b>vermelho</b> e <b>branco</b>.</p>
+        <div class="chips">
+          <span class="pill">#EsquadrãoDeAço</span>
+          <span class="pill">Athletic MG</span>
+          <span class="pill">AC</span>
+        </div>
+      </div>
+      <img src="../imagens/images (6).png" alt="Torcida do Athletic Club com bandeiras (imagem ilustrativa)">
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="card">
+      <h2>História & Identidade</h2>
+      <p>O Athletic Club, fundado em 1909, é um dos clubes mais tradicionais de Minas Gerais. Cresceu em destaque nos últimos anos ao conquistar títulos no Campeonato Mineiro do interior e ao participar das competições nacionais.</p>
+      <ul>
+        <li><b>Apelido:</b> Esquadrão de Aço</li>
+        <li><b>Cidade:</b> São João del-Rei (MG), Brasil</li>
+        <li><b>Fundação:</b> 27/06/1909</li>
+        <li><b>Estádio:</b> Joaquim Portugal</li>
+      </ul>
+      <div class="divider"></div>
+      <a class="btn" href="#titulos">Ver títulos</a>
+    </section>
+
+    <!-- Símbolos -->
+    <section id="simbolos" class="card grid grid-2">
+      <div>
+        <h2>Cores & Símbolos</h2>
+        <p>As cores oficiais são <b>preto</b>, <b>vermelho</b> e <b>branco</b>. O escudo traz o nome do clube e as iniciais AC, sendo um dos símbolos mais antigos do futebol mineiro.</p>
+        <ul>
+          <li><b>Cores:</b> Preto, Vermelho e Branco</li>
+          <li><b>Escudo:</b> Tradicional brasão com AC</li>
+          <li><b>Hino:</b> “Hino do Athletic Club” (versão oficial disponível nas plataformas de áudio)</li>
+        </ul>
+      </div>
+      <div>
+        <figure class="card" style="margin:0">
+          <img src="../imagens/athletic-703x425.png"
+               alt="Escudo do Athletic Club"
+               style="width:100%; height:220px; object-fit:contain; background:#fff; border-radius:14px;">
+          <figcaption class="muted" style="font-size:.9rem; padding-top:6px">Escudo oficial (uso ilustrativo).</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Títulos -->
+    <section id="titulos" class="card">
+      <h2>Títulos Selecionados</h2>
+      <p class="muted">Lista resumida de conquistas de destaque (não exaustiva).</p>
+      <table aria-label="Tabela de títulos do Athletic Club">
+        <thead>
+          <tr>
+            <th>Competição</th>
+            <th>Conquista</th>
+            <th>Observação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Campeonato Mineiro - Interior</td>
+            <td>2021, 2022, 2023</td>
+            <td>Tricampeão do interior consecutivo.</td>
+          </tr>
+          <tr>
+            <td>Copa de Minas Gerais</td>
+            <td>2004</td>
+            <td>Título estadual de expressão.</td>
+          </tr>
+          <tr>
+            <td>Acessos nacionais</td>
+            <td>Série D</td>
+            <td>Participação crescente em divisões nacionais.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Estádio -->
+    <section id="estadio" class="card grid grid-2">
+      <div>
+        <h2>Estádio Joaquim Portugal</h2>
+        <p>A casa do Athletic Club é o <b>Estádio Joaquim Portugal</b>, localizado em São João del-Rei (MG). Recebe os jogos oficiais e é um dos palcos tradicionais do futebol mineiro.</p>
+        <ul>
+          <li><b>Localização:</b> São João del-Rei, Minas Gerais</li>
+          <li><b>Capacidade:</b> Aproximadamente 4.000 torcedores</li>
+          <li><b>Uso:</b> Jogos oficiais e treinos</li>
+        </ul>
+      </div>
+      <figure class="card" style="margin:0">
+        <img src="../imagens/Série-D-2023-Athletic-Club-4x2-EC-Santo-André8-1024x768.jpg"
+             alt="Estádio Joaquim Portugal (imagem ilustrativa)"
+             style="width:100%; height:220px; object-fit:cover; border-radius:14px;">
+        <figcaption class="muted" style="font-size:.9rem; padding-top:6px">Imagem ilustrativa do estádio.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Redes -->
+    <section id="contato" class="card">
+      <h2>Redes oficiais (links de exemplo)</h2>
+      <p>Substitua pelos links oficiais do clube:</p>
+      <ul>
+        <li>Site: <a href="#" rel="noopener">athleticclub.com.br</a></li>
+        <li>Instagram: <a href="#" rel="noopener">@athleticclubmg</a></li>
+        <li>Twitter/X: <a href="#" rel="noopener">@AthleticClubMG</a></li>
+        <li>YouTube: <a href="#" rel="noopener">/AthleticClubMG</a></li>
+      </ul>
+      <a class="btn" href="#topo">Voltar ao topo</a>
+    </section>
+  </main>
+
+  <footer>
+    <small>Projeto fã, sem fins comerciais. © <span id="ano"></span> • Esquadrão de Aço, sempre! ⚫🔴⚪</small>
+  </footer>
+
+  <script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

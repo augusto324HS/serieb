@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clube Athletico Paranaense — Página Fã</title>
+  <meta name="description" content="Página informativa de fã sobre o Clube Athletico Paranaense." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --vermelho:#d00000;    /* vermelho tradicional */
+      --vermelho-escuro:#800000;
+      --branco:#ffffff;
+      --cinza:#f4f6f8;
+      --texto:#1f2937;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Montserrat, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      color:var(--texto);
+      background:var(--cinza);
+      line-height:1.6;
+    }
+    header{
+      position:sticky; top:0; z-index:50;
+      background:linear-gradient(90deg,var(--vermelho), var(--vermelho-escuro));
+      color:var(--branco);
+      padding:12px 16px;
+      box-shadow:0 4px 12px rgba(0,0,0,.15);
+    }
+    .nav{max-width:1100px; margin:0 auto; display:flex; align-items:center; gap:16px}
+    .logo{display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--branco)}
+    .badge{
+      width:36px; height:36px; border-radius:50%;
+      border:2px solid #ffeaea;
+      display:grid; place-items:center; font-weight:800;
+      background:#e00000;
+      box-shadow:0 2px 6px rgba(0,0,0,.25) inset;
+    }
+    .nav a{color:var(--branco); text-decoration:none; font-weight:600; opacity:.95; padding:8px 10px; border-radius:10px}
+    .nav a:hover{background:rgba(255,255,255,.12)}
+    main{max-width:1100px; margin:24px auto; padding:0 16px}
+    .card{background:var(--branco); border-radius:20px; padding:22px; box-shadow:0 6px 20px rgba(0,0,0,.08); margin-bottom:18px}
+    .grid{display:grid; gap:16px}
+    @media (min-width:900px){ .grid-2{grid-template-columns:1.2fr .8fr} }
+    h1,h2{margin:.2rem 0 .6rem}
+    h1{font-size:clamp(1.6rem,2.2vw,2.2rem)}
+    h2{font-size:clamp(1.2rem,1.8vw,1.6rem); color:var(--vermelho-escuro)}
+    .tag{display:inline-block; background:#fdeaea; color:#8b0000; border:1px solid #f5baba; padding:4px 8px; border-radius:999px; font-size:.85rem; font-weight:600; margin-right:6px}
+    .hero{display:grid; gap:12px; align-items:center}
+    .hero img{width:100%; height:280px; object-fit:cover; border-radius:18px; box-shadow:0 6px 20px rgba(0,0,0,.12)}
+    ul{padding-left:18px}
+    table{width:100%; border-collapse:collapse; overflow:hidden; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,.06)}
+    thead{background:#fdeaea}
+    th, td{padding:12px 14px; text-align:left; border-bottom:1px solid #edf2f7}
+    tbody tr:hover{background:#fdf5f5}
+    footer{text-align:center; padding:36px 16px; color:#4b5563}
+    .btn{display:inline-block; border:none; background:var(--vermelho); color:#fff; padding:10px 14px; border-radius:12px; cursor:pointer; font-weight:700; text-decoration:none}
+    .btn:hover{background:var(--vermelho-escuro)}
+    .chips{display:flex; flex-wrap:wrap; gap:8px; margin:.4rem 0 0}
+    .muted{opacity:.75}
+    .banner{background:linear-gradient(135deg,#d00000 0%, #a00000 60%, #800000 100%); color:white; border-radius:20px; padding:22px; box-shadow:0 8px 24px rgba(0,0,0,.18)}
+    .pill{background:rgba(255,255,255,.15); padding:6px 10px; border-radius:999px; font-weight:700; margin-right:6px}
+    .divider{height:1px; background:#e5e7eb; margin:14px 0}
+  </style>
+</head>
+<body>
+  <!-- Navegação -->
+  <header>
+    <nav class="nav">
+      <a class="logo" href="#topo">
+        <span class="badge">CAP</span>
+        <strong>Athletico Paranaense</strong>
+      </a>
+      <div style="margin-left:auto; display:flex; gap:4px; flex-wrap:wrap">
+        <a href="#sobre">Sobre</a>
+        <a href="#simbolos">Cores & Símbolos</a>
+        <a href="#titulos">Títulos</a>
+        <a href="#estadio">Estádio</a>
+        <a href="#contato">Redes</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="topo">
+    <!-- Hero -->
+    <section class="card hero grid grid-2 banner">
+      <div>
+        <h1>Clube Athletico Paranaense</h1>
+        <p class="muted">Também chamado de <b>Athletico</b> ou <b>Furacão</b>. Clube de Curitiba, Paraná, fundado em <b>26 de março de 1924</b>. Cores: <b>vermelho</b> e <b>preto</b>.</p>
+        <div class="chips">
+          <span class="pill">#Furacão</span>
+          <span class="pill">Athletico</span>
+          <span class="pill">CAP</span>
+        </div>
+      </div>
+      <img src="../imagens/ima-de-geladeira-escudo-vermelho.webp">
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="card">
+      <h2>História & Identidade</h2>
+      <p>O Athletico Paranaense é um dos clubes mais tradicionais do Brasil, com destaque em competições nacionais e internacionais. Foi campeão da <b>Copa Sul-Americana</b> (2018 e 2021) e da <b>Copa do Brasil</b> (2019), consolidando sua força recente no cenário esportivo.</p>
+      <ul>
+        <li><b>Apelido:</b> Furacão</li>
+        <li><b>Cidade:</b> Curitiba (PR), Brasil</li>
+        <li><b>Fundação:</b> 26/03/1924</li>
+        <li><b>Estádio:</b> Arena da Baixada</li>
+      </ul>
+      <div class="divider"></div>
+      <a class="btn" href="#titulos">Ver títulos</a>
+    </section>
+
+    <!-- Símbolos -->
+    <section id="simbolos" class="card grid grid-2">
+      <div>
+        <h2>Cores & Símbolos</h2>
+        <p>As cores oficiais são <b>vermelho</b> e <b>preto</b>. O escudo moderno traz as iniciais <b>CAP</b>, estilizadas em listras diagonais, representando dinamismo e inovação.</p>
+        <ul>
+          <li><b>Cores:</b> Vermelho e Preto</li>
+          <li><b>Escudo:</b> CAP estilizado em formato moderno</li>
+          <li><b>Hino:</b> “Hino do Furacão” (buscar versão oficial nas plataformas de áudio)</li>
+        </ul>
+      </div>
+      <div>
+        <figure class="card" style="margin:0">
+          <img src="../imagens/gjtrxrywgaeef-g.avif"
+               alt="Escudo do Athletico Paranaense"
+               style="width:100%; height:220px; object-fit:contain; background:#fff; border-radius:14px;">
+          <figcaption class="muted" style="font-size:.9rem; padding-top:6px">Escudo oficial (uso ilustrativo).</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Títulos -->
+    <section id="titulos" class="card">
+      <h2>Títulos Selecionados</h2>
+      <p class="muted">Algumas conquistas marcantes do Furacão.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Competição</th>
+            <th>Conquista</th>
+            <th>Observação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Copa Sul-Americana</td>
+            <td>2018, 2021</td>
+            <td>Conquistas internacionais recentes.</td>
+          </tr>
+          <tr>
+            <td>Copa do Brasil</td>
+            <td>2019</td>
+            <td>Primeira conquista nacional do torneio.</td>
+          </tr>
+          <tr>
+            <td>Campeonato Brasileiro</td>
+            <td>2001</td>
+            <td>Título de maior expressão no cenário nacional.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Estádio -->
+    <section id="estadio" class="card grid grid-2">
+      <div>
+        <h2>Arena da Baixada</h2>
+        <p>A <b>Arena da Baixada</b>, em Curitiba, é a casa do Athletico Paranaense. Um dos estádios mais modernos do Brasil, foi sede da Copa do Mundo de 2014.</p>
+        <ul>
+          <li><b>Localização:</b> Curitiba, Paraná</li>
+          <li><b>Gramado:</b> Natural</li>
+          <li><b>Destaque:</b> Estádio moderno e inovador</li>
+        </ul>
+      </div>
+      <figure class="card" style="margin:0">
+        <img src="../imagens/iluminacao-noturna-da.jpg"
+             alt="Arena da Baixada (imagem ilustrativa)"
+             style="width:100%; height:220px; object-fit:cover; border-radius:14px;">
+        <figcaption class="muted" style="font-size:.9rem; padding-top:6px">Arena da Baixada, Curitiba.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Redes -->
+    <section id="contato" class="card">
+      <h2>Redes oficiais (links de exemplo)</h2>
+      <ul>
+        <li>Site: <a href="#" rel="noopener">athletico.com.br</a></li>
+        <li>Instagram: <a href="#" rel="noopener">@athleticoparanaense</a></li>
+        <li>Twitter/X: <a href="#" rel="noopener">@AthleticoPR</a></li>
+        <li>YouTube: <a href="#" rel="noopener">/athleticopr</a></li>
+      </ul>
+      <a class="btn" href="#topo">Voltar ao topo</a>
+    </section>
+  </main>
+
+  <footer>
+    <small>Projeto fã, sem fins comerciais. © <span id="ano"></span> • Furacão da Baixada! 🔴⚫</small>
+  </footer>
+
+  <script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

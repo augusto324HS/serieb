@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>América Mineiro FC — Página Fã</title>
+  <meta name="description" content="Página informativa de fã sobre o América Futebol Clube (América-MG)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --verde:#005f2f;    /* verde escuro tradicional */
+      --verde-escuro:#004424;
+      --branco:#ffffff;
+      --cinza:#f4f6f8;
+      --texto:#1f2937;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Montserrat, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+      color:var(--texto);
+      background:var(--cinza);
+      line-height:1.6;
+    }
+    /* Cabeçalho fixo */
+    header{
+      position:sticky; top:0; z-index:50;
+      background:linear-gradient(90deg,var(--verde), var(--verde-escuro));
+      color:var(--branco);
+      padding:12px 16px;
+      box-shadow:0 4px 12px rgba(0,0,0,.15);
+    }
+    .nav{
+      max-width:1100px; margin:0 auto; display:flex; align-items:center; gap:16px;
+    }
+    .logo{
+      display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--branco);
+    }
+    .badge{
+      width:36px; height:36px; border-radius:50%;
+      border:2px solid #e8ffe8;
+      display:grid; place-items:center; font-weight:800;
+      background:#008f4c;
+      box-shadow:0 2px 6px rgba(0,0,0,.25) inset;
+    }
+    .nav a{
+      color:var(--branco); text-decoration:none; font-weight:600; opacity:.95;
+      padding:8px 10px; border-radius:10px;
+    }
+    .nav a:hover{background:rgba(255,255,255,.12)}
+    main{max-width:1100px; margin:24px auto; padding:0 16px}
+    /* Card base */
+    .card{
+      background:var(--branco); border-radius:20px; padding:22px;
+      box-shadow:0 6px 20px rgba(0,0,0,.08); margin-bottom:18px;
+    }
+    .grid{display:grid; gap:16px}
+    @media (min-width:900px){ .grid-2{grid-template-columns:1.2fr .8fr} }
+    h1,h2{margin:.2rem 0 .6rem}
+    h1{font-size:clamp(1.6rem,2.2vw,2.2rem)}
+    h2{font-size:clamp(1.2rem,1.8vw,1.6rem); color:var(--verde-escuro)}
+    .tag{
+      display:inline-block; background:#e7f8ee; color:#105c34; border:1px solid #b8e8cb;
+      padding:4px 8px; border-radius:999px; font-size:.85rem; font-weight:600; margin-right:6px
+    }
+    .hero{
+      display:grid; gap:12px; align-items:center
+    }
+    .hero img{
+      width:100%; height:280px; object-fit:cover; border-radius:18px;
+      box-shadow:0 6px 20px rgba(0,0,0,.12)
+    }
+    ul{padding-left:18px}
+    /* Tabela simples */
+    table{width:100%; border-collapse:collapse; overflow:hidden; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,.06)}
+    thead{background:#e6f7ed}
+    th, td{padding:12px 14px; text-align:left; border-bottom:1px solid #edf2f7}
+    tbody tr:hover{background:#f7fbf9}
+    /* Rodapé */
+    footer{
+      text-align:center; padding:36px 16px; color:#4b5563
+    }
+    .btn{
+      display:inline-block; border:none; background:var(--verde);
+      color:#fff; padding:10px 14px; border-radius:12px; cursor:pointer; font-weight:700; text-decoration:none
+    }
+    .btn:hover{background:var(--verde-escuro)}
+    .chips{display:flex; flex-wrap:wrap; gap:8px; margin:.4rem 0 0}
+    .muted{opacity:.75}
+    .banner{
+      background:linear-gradient(135deg,#008f4c 0%, #005f2f 60%, #004424 100%);
+      color:white; border-radius:20px; padding:22px; box-shadow:0 8px 24px rgba(0,0,0,.18)
+    }
+    .pill{background:rgba(255,255,255,.15); padding:6px 10px; border-radius:999px; font-weight:700; margin-right:6px}
+    .divider{height:1px; background:#e5e7eb; margin:14px 0}
+  </style>
+</head>
+<body>
+  <!-- Navegação -->
+  <header>
+    <nav class="nav">
+      <a class="logo" href="#topo" aria-label="Voltar ao topo">
+        <span class="badge">AMC</span>
+        <strong>América Mineiro</strong>
+      </a>
+      <div style="margin-left:auto; display:flex; gap:4px; flex-wrap:wrap">
+        <a href="#sobre">Sobre</a>
+        <a href="#simbolos">Cores & Símbolos</a>
+        <a href="#titulos">Títulos</a>
+        <a href="#estadio">Estádio</a>
+        <a href="#contato">Redes</a>
+        <a href=""> Inicio</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="topo">
+    <!-- Hero -->
+    <section class="card hero grid grid-2 banner">
+      <div>
+        <h1>América Futebol Clube (MG)</h1>
+        <p class="muted">Conhecido como <b>América Mineiro</b> ou <b>Coelho</b>. Clube de Belo Horizonte, Minas Gerais, fundado em <b>30 de abril de 1912</b>. Cores: <b>verde</b> e <b>branco</b>.</p>
+        <div class="chips">
+          <span class="pill">#PraCimaDelesCoelho</span>
+          <span class="pill">Verde e Branco</span>
+          <span class="pill">AMC</span>
+        </div>
+      </div>
+      <img src="../imagens/images (5).png" alt="Torcida do América Mineiro com bandeiras verdes (imagem ilustrativa)">
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="card">
+      <h2>História & Identidade</h2>
+      <p>O América Mineiro é um dos clubes mais tradicionais de Minas Gerais e do Brasil. Conhecido pelo apelido <b>Coelho</b>, construiu sua história com títulos estaduais, conquistas nacionais e revelação de talentos. Seu mascote, o coelho, representa agilidade e persistência.</p>
+      <ul>
+        <li><b>Apelido:</b> Coelho</li>
+        <li><b>Cidade:</b> Belo Horizonte (MG), Brasil</li>
+        <li><b>Fundação:</b> 30/04/1912</li>
+        <li><b>Estádio:</b> Independência</li>
+      </ul>
+      <div class="divider"></div>
+      <a class="btn" href="#titulos">Ver títulos</a>
+    </section>
+
+    <!-- Símbolos -->
+    <section id="simbolos" class="card grid grid-2">
+      <div>
+        <h2>Cores & Símbolos</h2>
+        <p>As cores oficiais são <b>verde</b> e <b>branco</b>. O escudo traz as iniciais <b>AFC</b> em destaque, e o mascote oficial é o <b>Coelho</b>, muito querido pela torcida.</p>
+        <ul>
+          <li><b>Cores:</b> Verde e Branco</li>
+          <li><b>Escudo:</b> Letras AFC em verde, com contorno branco</li>
+          <li><b>Mascote:</b> O Coelho</li>
+          <li><b>Hino:</b> “Hino do América Mineiro” (versão oficial disponível em plataformas de áudio)</li>
+        </ul>
+      </div>
+      <div>
+        <!-- Espaço para imagem do escudo -->
+        <figure class="card" style="margin:0">
+          <img src="../imagens/download.jfif"
+               alt="Escudo do América Mineiro (AFC)"
+               style="width:100%; height:220px; object-fit:contain; background:#fff; border-radius:14px;">
+          <figcaption class="muted" style="font-size:.9rem; padding-top:6px">Escudo oficial (uso ilustrativo).</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Títulos -->
+    <section id="titulos" class="card">
+      <h2>Títulos Selecionados</h2>
+      <p class="muted">Lista resumida de conquistas de destaque (não exaustiva).</p>
+      <table aria-label="Tabela de títulos do América Mineiro">
+        <thead>
+          <tr>
+            <th>Competição</th>
+            <th>Conquista</th>
+            <th>Observação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Campeonato Brasileiro Série B</td>
+            <td>1997, 2017</td>
+            <td>Dois títulos nacionais da segunda divisão.</td>
+          </tr>
+          <tr>
+            <td>Campeonato Brasileiro Série C</td>
+            <td>2009</td>
+            <td>Conquista que garantiu retorno à Série B.</td>
+          </tr>
+          <tr>
+            <td>Campeonato Mineiro</td>
+            <td>Diversas edições</td>
+            <td>Mais de 15 títulos estaduais.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Estádio -->
+    <section id="estadio" class="card grid grid-2">
+      <div>
+        <h2>Estádio Independência</h2>
+        <p>O <b>Estádio Independência</b>, em Belo Horizonte (MG), é a casa do América Mineiro. Foi inaugurado em 1950 e modernizado em 2012, sendo palco de grandes jogos do clube e da história do futebol mineiro.</p>
+        <ul>
+          <li><b>Localização:</b> Belo Horizonte, Minas Gerais</li>
+          <li><b>Capacidade:</b> Aproximadamente 23 mil torcedores</li>
+          <li><b>Uso:</b> Jogos oficiais do América-MG</li>
+        </ul>
+      </div>
+      <figure class="card" style="margin:0">
+        <img src="../imagens/américa-am-rica-tour-independ-ncia-1722033454.jpg"
+             alt="Estádio Independência (imagem ilustrativa)"
+             style="width:100%; height:220px; object-fit:cover; border-radius:14px;">
+        <figcaption class="muted" style="font-size:.9rem; padding-top:6px">Imagem ilustrativa do Estádio Independência.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Redes e contato -->
+    <section id="contato" class="card">
+      <h2>Redes oficiais (links de exemplo)</h2>
+      <p>Substitua pelos links oficiais do clube:</p>
+      <ul>
+        <li>Site: <a href="#" rel="noopener">americamineiro.com.br</a></li>
+        <li>Instagram: <a href="#" rel="noopener">@americamg</a></li>
+        <li>Twitter/X: <a href="#" rel="noopener">@AmericaMG</a></li>
+        <li>YouTube: <a href="#" rel="noopener">/AmericaMGOficial</a></li>
+      </ul>
+      <a class="btn" href="#topo">Voltar ao topo</a>
+    </section>
+  </main>
+
+  <footer>
+    <small>Projeto fã, sem fins comerciais. © <span id="ano"></span> • Pra cima deles, Coelho! 🐇💚</small>
+  </footer>
+
+  <script>
+    // Atualiza o ano no rodapé
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

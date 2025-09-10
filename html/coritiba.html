@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coritiba Foot Ball Club — Página Fã</title>
+  <meta name="description" content="Página informativa de fã sobre o Coritiba Foot Ball Club." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --verde:#00733a;    /* verde Coritiba */
+      --verde-escuro:#00582a;
+      --branco:#ffffff;
+      --cinza:#f4f6f8;
+      --texto:#1f2937;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Montserrat, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+      color:var(--texto);
+      background:var(--cinza);
+      line-height:1.6;
+    }
+    header{
+      position:sticky; top:0; z-index:50;
+      background:linear-gradient(90deg,var(--verde), var(--verde-escuro));
+      color:var(--branco);
+      padding:12px 16px;
+      box-shadow:0 4px 12px rgba(0,0,0,.15);
+    }
+    .nav{
+      max-width:1100px; margin:0 auto; display:flex; align-items:center; gap:16px;
+    }
+    .logo{
+      display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--branco);
+    }
+    .badge{
+      width:36px; height:36px; border-radius:50%;
+      border:2px solid #e8ffe8;
+      display:grid; place-items:center; font-weight:800;
+      background:#009e4b;
+      box-shadow:0 2px 6px rgba(0,0,0,.25) inset;
+    }
+    .nav a{
+      color:var(--branco); text-decoration:none; font-weight:600; opacity:.95;
+      padding:8px 10px; border-radius:10px;
+    }
+    .nav a:hover{background:rgba(255,255,255,.12)}
+    main{max-width:1100px; margin:24px auto; padding:0 16px}
+    .card{
+      background:var(--branco); border-radius:20px; padding:22px;
+      box-shadow:0 6px 20px rgba(0,0,0,.08); margin-bottom:18px;
+    }
+    .grid{display:grid; gap:16px}
+    @media (min-width:900px){ .grid-2{grid-template-columns:1.2fr .8fr} }
+    h1,h2{margin:.2rem 0 .6rem}
+    h1{font-size:clamp(1.6rem,2.2vw,2.2rem)}
+    h2{font-size:clamp(1.2rem,1.8vw,1.6rem); color:var(--verde-escuro)}
+    .tag{
+      display:inline-block; background:#e7f8ee; color:#105c34; border:1px solid #b8e8cb;
+      padding:4px 8px; border-radius:999px; font-size:.85rem; font-weight:600; margin-right:6px
+    }
+    .hero{
+      display:grid; gap:12px; align-items:center
+    }
+    .hero img{
+      width:100%; height:280px; object-fit:cover; border-radius:18px;
+      box-shadow:0 6px 20px rgba(0,0,0,.12)
+    }
+    ul{padding-left:18px}
+    table{width:100%; border-collapse:collapse; overflow:hidden; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,.06)}
+    thead{background:#e6f7ed}
+    th, td{padding:12px 14px; text-align:left; border-bottom:1px solid #edf2f7}
+    tbody tr:hover{background:#f7fbf9}
+    footer{
+      text-align:center; padding:36px 16px; color:#4b5563
+    }
+    .btn{
+      display:inline-block; border:none; background:var(--verde);
+      color:#fff; padding:10px 14px; border-radius:12px; cursor:pointer; font-weight:700; text-decoration:none
+    }
+    .btn:hover{background:var(--verde-escuro)}
+    .chips{display:flex; flex-wrap:wrap; gap:8px; margin:.4rem 0 0}
+    .muted{opacity:.75}
+    .banner{
+      background:linear-gradient(135deg,#009e4b 0%, #00733a 60%, #00582a 100%);
+      color:white; border-radius:20px; padding:22px; box-shadow:0 8px 24px rgba(0,0,0,.18)
+    }
+    .pill{background:rgba(255,255,255,.15); padding:6px 10px; border-radius:999px; font-weight:700; margin-right:6px}
+    .divider{height:1px; background:#e5e7eb; margin:14px 0}
+  </style>
+</head>
+<body>
+  <!-- Navegação -->
+  <header>
+    <nav class="nav">
+      <a class="logo" href="#topo" aria-label="Voltar ao topo">
+        <span class="badge">CFC</span>
+        <strong>Coritiba</strong>
+      </a>
+      <div style="margin-left:auto; display:flex; gap:4px; flex-wrap:wrap">
+        <a href="#sobre">Sobre</a>
+        <a href="#simbolos">Cores & Símbolos</a>
+        <a href="#titulos">Títulos</a>
+        <a href="#estadio">Estádio</a>
+        <a href="#contato">Redes</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="topo">
+    <!-- Hero -->
+    <section class="card hero grid grid-2 banner">
+      <div>
+        <h1>Coritiba Foot Ball Club</h1>
+        <p class="muted">Também conhecido como <b>Coritiba</b> ou <b>Coxa-Branca</b>. Clube de Curitiba, Paraná, fundado em <b>12 de outubro de 1909</b>. Cores: <b>verde</b> e <b>branco</b>.</p>
+        <div class="chips">
+          <span class="pill">#VamosCoxa</span>
+          <span class="pill">Orgulho de Curitiba</span>
+          <span class="pill">CFC</span>
+        </div>
+      </div>
+      <img src="../imagens/images (8).jfif">
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="card">
+      <h2>História & Identidade</h2>
+      <p>O Coritiba é um dos clubes mais tradicionais do Paraná, com diversas conquistas estaduais e nacionais. É conhecido pelo espírito de tradição e grande torcida local.</p>
+      <ul>
+        <li><b>Apelido:</b> Coxa-Branca</li>
+        <li><b>Cidade:</b> Curitiba (PR), Brasil</li>
+        <li><b>Fundação:</b> 12/10/1909</li>
+        <li><b>Estádio:</b> Couto Pereira</li>
+      </ul>
+      <div class="divider"></div>
+      <a class="btn" href="#titulos">Ver títulos</a>
+    </section>
+
+    <!-- Símbolos -->
+    <section id="simbolos" class="card grid grid-2">
+      <div>
+        <h2>Cores & Símbolos</h2>
+        <p>As cores oficiais são <b>verde</b> e <b>branco</b>. O escudo traz as iniciais <b>CFC</b> em destaque, reconhecido em todo o estado do Paraná.</p>
+        <ul>
+          <li><b>Cores:</b> Verde e Branco</li>
+          <li><b>Escudo:</b> CFC em destaque, com estrelas alusivas a conquistas</li>
+          <li><b>Hino:</b> “Hino do Coritiba”</li>
+        </ul>
+      </div>
+      <div>
+        <figure class="card" style="margin:0">
+          <img src="../imagens/sem-torcida-organizada-imperio-alviverde-dragoes-coritiba-coxa-multa-ministerio-publico-parana-e1703112391744-850x560.jpg"
+               alt="Escudo do Coritiba (CFC)"
+               style="width:100%; height:220px; object-fit:contain; background:#fff; border-radius:14px;">
+          <figcaption class="muted" style="font-size:.9rem; padding-top:6px">Escudo oficial (uso ilustrativo).</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Títulos -->
+    <section id="titulos" class="card">
+      <h2>Títulos Selecionados</h2>
+      <p class="muted">Lista resumida de conquistas de destaque (não exaustiva).</p>
+      <table aria-label="Tabela de títulos do Coritiba">
+        <thead>
+          <tr>
+            <th>Competição</th>
+            <th>Conquista</th>
+            <th>Observação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Campeonato Brasileiro Série A</td>
+            <td>1985</td>
+            <td>Título nacional de destaque.</td>
+          </tr>
+          <tr>
+            <td>Campeonato Paranaense</td>
+            <td>Várias edições</td>
+            <td>Conquistas estaduais ao longo de diferentes anos.</td>
+          </tr>
+          <tr>
+            <td>Campeonato Brasileiro Série B</td>
+            <td>2007</td>
+            <td>Campanha sólida garantindo acesso à Série A.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Estádio -->
+    <section id="estadio" class="card grid grid-2">
+      <div>
+        <h2>Couto Pereira</h2>
+        <p>O <b>Couto Pereira</b> é o estádio do Coritiba, localizado em Curitiba (PR). Recebe partidas oficiais e eventos do clube, sendo um ponto de encontro para a torcida.</p>
+        <ul>
+          <li><b>Localização:</b> Curitiba, Paraná</li>
+          <li><b>Gramado:</b> Natural</li>
+          <li><b>Uso:</b> Jogos oficiais e eventos do clube</li>
+        </ul>
+      </div>
+      <figure class="card" style="margin:0">
+        <img src="../imagens/00375078.jpg"
+             alt="Arquibancadas de um estádio de futebol (imagem ilustrativa)"
+             style="width:100%; height:220px; object-fit:cover; border-radius:14px;">
+        <figcaption class="muted" style="font-size:.9rem; padding-top:6px">Imagem ilustrativa de estádio.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Redes e contato -->
+    <section id="contato" class="card">
+      <h2>Redes oficiais (links de exemplo)</h2>
+      <p>Substitua pelos links oficiais do clube:</p>
+      <ul>
+        <li>Site: <a href="#" rel="noopener">coritiba.com</a></li>
+        <li>Instagram: <a href="#" rel="noopener">@coxitbaoficial</a></li>
+        <li>Twitter/X: <a href="#" rel="noopener">@CoxaOficial</a></li>
+        <li>YouTube: <a href="#" rel="noopener">/CFCOficial</a></li>
+      </ul>
+      <a class="btn" href="#topo">Voltar ao topo</a>
+    </section>
+  </main>
+
+  <footer>
+    <small>Projeto fã, sem fins comerciais. © <span id="ano"></span> • Verde e branco, sempre! 💚</small>
+  </footer>
+
+  <script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

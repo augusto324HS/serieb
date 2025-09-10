@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Operário Ferroviário EC — Página Fã</title>
+  <meta name="description" content="Página informativa de fã sobre o Operário Ferroviário Esporte Clube, o Fantasma de Vila Oficinas." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --preto:#111111;   
+      --cinza-escuro:#2c2c2c;
+      --branco:#ffffff;
+      --cinza:#f4f6f8;
+      --texto:#1f2937;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Montserrat, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+      color:var(--texto);
+      background:var(--cinza);
+      line-height:1.6;
+    }
+    header{
+      position:sticky; top:0; z-index:50;
+      background:linear-gradient(90deg,var(--preto), var(--cinza-escuro));
+      color:var(--branco);
+      padding:12px 16px;
+      box-shadow:0 4px 12px rgba(0,0,0,.15);
+    }
+    .nav{
+      max-width:1100px; margin:0 auto; display:flex; align-items:center; gap:16px;
+    }
+    .logo{
+      display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--branco);
+    }
+    .badge{
+      width:36px; height:36px; border-radius:50%;
+      border:2px solid #fff;
+      display:grid; place-items:center; font-weight:800;
+      background:#333;
+      box-shadow:0 2px 6px rgba(0,0,0,.25) inset;
+    }
+    .nav a{
+      color:var(--branco); text-decoration:none; font-weight:600; opacity:.95;
+      padding:8px 10px; border-radius:10px;
+    }
+    .nav a:hover{background:rgba(255,255,255,.12)}
+    main{max-width:1100px; margin:24px auto; padding:0 16px}
+    .card{
+      background:var(--branco); border-radius:20px; padding:22px;
+      box-shadow:0 6px 20px rgba(0,0,0,.08); margin-bottom:18px;
+    }
+    .grid{display:grid; gap:16px}
+    @media (min-width:900px){ .grid-2{grid-template-columns:1.2fr .8fr} }
+    h1,h2{margin:.2rem 0 .6rem}
+    h1{font-size:clamp(1.6rem,2.2vw,2.2rem)}
+    h2{font-size:clamp(1.2rem,1.8vw,1.6rem); color:var(--cinza-escuro)}
+    .tag{
+      display:inline-block; background:#f0f0f0; color:#222; border:1px solid #ccc;
+      padding:4px 8px; border-radius:999px; font-size:.85rem; font-weight:600; margin-right:6px
+    }
+    .hero{
+      display:grid; gap:12px; align-items:center
+    }
+    .hero img{
+      width:100%; height:280px; object-fit:cover; border-radius:18px;
+      box-shadow:0 6px 20px rgba(0,0,0,.12)
+    }
+    ul{padding-left:18px}
+    table{width:100%; border-collapse:collapse; overflow:hidden; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,.06)}
+    thead{background:#f0f0f0}
+    th, td{padding:12px 14px; text-align:left; border-bottom:1px solid #edf2f7}
+    tbody tr:hover{background:#fafafa}
+    footer{
+      text-align:center; padding:36px 16px; color:#4b5563
+    }
+    .btn{
+      display:inline-block; border:none; background:var(--preto);
+      color:#fff; padding:10px 14px; border-radius:12px; cursor:pointer; font-weight:700; text-decoration:none
+    }
+    .btn:hover{background:var(--cinza-escuro)}
+    .chips{display:flex; flex-wrap:wrap; gap:8px; margin:.4rem 0 0}
+    .muted{opacity:.75}
+    .banner{
+      background:linear-gradient(135deg,#2c2c2c 0%, #111 60%, #000 100%);
+      color:white; border-radius:20px; padding:22px; box-shadow:0 8px 24px rgba(0,0,0,.18)
+    }
+    .pill{background:rgba(255,255,255,.15); padding:6px 10px; border-radius:999px; font-weight:700; margin-right:6px}
+    .divider{height:1px; background:#e5e7eb; margin:14px 0}
+  </style>
+</head>
+<body>
+  <!-- Navegação -->
+  <header>
+    <nav class="nav">
+      <a class="logo" href="#topo" aria-label="Voltar ao topo">
+        <span class="badge">OFC</span>
+        <strong>Operário-PR</strong>
+      </a>
+      <div style="margin-left:auto; display:flex; gap:4px; flex-wrap:wrap">
+        <a href="#sobre">Sobre</a>
+        <a href="#simbolos">Cores & Símbolos</a>
+        <a href="#titulos">Títulos</a>
+        <a href="#estadio">Estádio</a>
+        <a href="#contato">Redes</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="topo">
+    <!-- Hero -->
+    <section class="card hero grid grid-2 banner">
+      <div>
+        <h1>Operário Ferroviário Esporte Clube</h1>
+        <p class="muted">Conhecido como <b>Operário-PR</b> ou <b>Fantasma</b>. Clube de Ponta Grossa, Paraná, fundado em <b>1º de maio de 1912</b>. Cores: <b>preto</b> e <b>branco</b>.</p>
+        <div class="chips">
+          <span class="pill">#Fantasma</span>
+          <span class="pill">Operário de Ponta Grossa</span>
+          <span class="pill">OFC</span>
+        </div>
+      </div>
+      <img src="../imagens/whatsapp-image-2025-03-30-at-13.51.27-1-.jpeg">
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="card">
+      <h2>História & Identidade</h2>
+      <p>O Operário Ferroviário é um dos clubes mais tradicionais do Paraná, apelidado de <b>Fantasma</b>. Ao longo da história, conquistou títulos estaduais, nacionais e teve campanhas marcantes em competições nacionais, especialmente após o acesso à Série B.</p>
+      <ul>
+        <li><b>Apelido:</b> Fantasma</li>
+        <li><b>Cidade:</b> Ponta Grossa (PR), Brasil</li>
+        <li><b>Fundação:</b> 01/05/1912</li>
+        <li><b>Estádio:</b> Germano Krüger</li>
+      </ul>
+      <div class="divider"></div>
+      <a class="btn" href="#titulos">Ver títulos</a>
+    </section>
+
+    <!-- Símbolos -->
+    <section id="simbolos" class="card grid grid-2">
+      <div>
+        <h2>Cores & Símbolos</h2>
+        <p>As cores oficiais são <b>preto</b> e <b>branco</b>. O escudo traz as iniciais <b>OFC</b> em um círculo, com destaque para o ano de fundação e engrenagens, reforçando a identidade ferroviária.</p>
+        <ul>
+          <li><b>Cores:</b> Preto e Branco</li>
+          <li><b>Escudo:</b> OFC em destaque, com referência ferroviária</li>
+          <li><b>Hino:</b> “Hino do Operário Ferroviário”</li>
+        </ul>
+      </div>
+      <div>
+        <figure class="card" style="margin:0">
+          <img src="../imagens/28-07-16_torcida010515.jpg"
+               alt="Escudo do Operário Ferroviário (OFC)"
+               style="width:100%; height:220px; object-fit:contain; background:#fff; border-radius:14px;">
+          <figcaption class="muted" style="font-size:.9rem; padding-top:6px">Escudo oficial (uso ilustrativo).</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Títulos -->
+    <section id="titulos" class="card">
+      <h2>Títulos Selecionados</h2>
+      <p class="muted">Principais conquistas do Operário Ferroviário.</p>
+      <table aria-label="Tabela de títulos do Operário Ferroviário">
+        <thead>
+          <tr>
+            <th>Competição</th>
+            <th>Conquista</th>
+            <th>Observação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Campeonato Paranaense</td>
+            <td>1916, 2015</td>
+            <td>Importantes conquistas estaduais.</td>
+          </tr>
+          <tr>
+            <td>Campeonato Brasileiro Série C</td>
+            <td>2018</td>
+            <td>Título histórico que levou o clube à Série B.</td>
+          </tr>
+          <tr>
+            <td>Campeonato Brasileiro Série D</td>
+            <td>2017</td>
+            <td>Primeiro título nacional do clube.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Estádio -->
+    <section id="estadio" class="card grid grid-2">
+      <div>
+        <h2>Estádio Germano Krüger</h2>
+        <p>A casa do Fantasma, localizada em Ponta Grossa (PR). O estádio recebe partidas oficiais e é o palco onde a torcida vive suas maiores emoções.</p>
+        <ul>
+          <li><b>Localização:</b> Ponta Grossa, Paraná</li>
+          <li><b>Capacidade:</b> Aproximadamente 10.600 torcedores</li>
+          <li><b>Uso:</b> Jogos oficiais e eventos do clube</li>
+        </ul>
+      </div>
+      <figure class="card" style="margin:0">
+        <img src="../imagens/vilakruger2.webp"
+             alt="Arquibancadas do Estádio Germano Krüger (imagem ilustrativa)"
+             style="width:100%; height:220px; object-fit:cover; border-radius:14px;">
+        <figcaption class="muted" style="font-size:.9rem; padding-top:6px">Imagem ilustrativa do estádio.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Redes -->
+    <section id="contato" class="card">
+      <h2>Redes oficiais (links de exemplo)</h2>
+      <p>Substitua pelos links oficiais do clube:</p>
+      <ul>
+        <li>Site: <a href="#" rel="noopener">operarioferroviario.com.br</a></li>
+        <li>Instagram: <a href="#" rel="noopener">@ofec.oficial</a></li>
+        <li>Twitter/X: <a href="#" rel="noopener">@OFECoficial</a></li>
+        <li>YouTube: <a href="#" rel="noopener">/OperarioOficial</a></li>
+      </ul>
+      <a class="btn" href="#topo">Voltar ao topo</a>
+    </section>
+  </main>
+
+  <footer>
+    <small>Projeto fã, sem fins comerciais. © <span id="ano"></span> • Fantasma Alvinegro, sempre! 🏴⚪</small>
+  </footer>
+
+  <script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

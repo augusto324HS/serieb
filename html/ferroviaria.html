@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ferroviária Futebol Clube — Página Fã</title>
+  <meta name="description" content="Página informativa de fã sobre a Associação Ferroviária de Esportes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --vinho:#6e0d25;    /* cor tradicional */
+      --vinho-escuro:#4e0a1b;
+      --branco:#ffffff;
+      --cinza:#f4f6f8;
+      --texto:#1f2937;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Montserrat, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans";
+      color:var(--texto);
+      background:var(--cinza);
+      line-height:1.6;
+    }
+    header{
+      position:sticky; top:0; z-index:50;
+      background:linear-gradient(90deg,var(--vinho), var(--vinho-escuro));
+      color:var(--branco);
+      padding:12px 16px;
+      box-shadow:0 4px 12px rgba(0,0,0,.15);
+    }
+    .nav{
+      max-width:1100px; margin:0 auto; display:flex; align-items:center; gap:16px;
+    }
+    .logo{
+      display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--branco);
+    }
+    .badge{
+      width:36px; height:36px; border-radius:50%;
+      border:2px solid #ffeaea;
+      display:grid; place-items:center; font-weight:800;
+      background:#8e1833;
+      box-shadow:0 2px 6px rgba(0,0,0,.25) inset;
+    }
+    .nav a{
+      color:var(--branco); text-decoration:none; font-weight:600; opacity:.95;
+      padding:8px 10px; border-radius:10px;
+    }
+    .nav a:hover{background:rgba(255,255,255,.12)}
+    main{max-width:1100px; margin:24px auto; padding:0 16px}
+    .card{
+      background:var(--branco); border-radius:20px; padding:22px;
+      box-shadow:0 6px 20px rgba(0,0,0,.08); margin-bottom:18px;
+    }
+    .grid{display:grid; gap:16px}
+    @media (min-width:900px){ .grid-2{grid-template-columns:1.2fr .8fr} }
+    h1,h2{margin:.2rem 0 .6rem}
+    h1{font-size:clamp(1.6rem,2.2vw,2.2rem)}
+    h2{font-size:clamp(1.2rem,1.8vw,1.6rem); color:var(--vinho-escuro)}
+    .hero{
+      display:grid; gap:12px; align-items:center
+    }
+    .hero img{
+      width:100%; height:280px; object-fit:cover; border-radius:18px;
+      box-shadow:0 6px 20px rgba(0,0,0,.12)
+    }
+    table{width:100%; border-collapse:collapse; overflow:hidden; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,.06)}
+    thead{background:#f9e6ea}
+    th, td{padding:12px 14px; text-align:left; border-bottom:1px solid #edf2f7}
+    tbody tr:hover{background:#fdf7f8}
+    footer{
+      text-align:center; padding:36px 16px; color:#4b5563
+    }
+    .btn{
+      display:inline-block; border:none; background:var(--vinho);
+      color:#fff; padding:10px 14px; border-radius:12px; cursor:pointer; font-weight:700; text-decoration:none
+    }
+    .btn:hover{background:var(--vinho-escuro)}
+    .banner{
+      background:linear-gradient(135deg,#8e1833 0%, #6e0d25 60%, #4e0a1b 100%);
+      color:white; border-radius:20px; padding:22px; box-shadow:0 8px 24px rgba(0,0,0,.18)
+    }
+    .pill{background:rgba(255,255,255,.15); padding:6px 10px; border-radius:999px; font-weight:700; margin-right:6px}
+    .muted{opacity:.75}
+  </style>
+</head>
+<body>
+  <!-- Navegação -->
+  <header>
+    <nav class="nav">
+      <a class="logo" href="#topo" aria-label="Voltar ao topo">
+        <span class="badge">AFE</span>
+        <strong>Ferroviária</strong>
+      </a>
+      <div style="margin-left:auto; display:flex; gap:4px; flex-wrap:wrap">
+        <a href="#sobre">Sobre</a>
+        <a href="#simbolos">Cores & Símbolos</a>
+        <a href="#titulos">Títulos</a>
+        <a href="#estadio">Estádio</a>
+        <a href="#contato">Redes</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="topo">
+    <!-- Hero -->
+    <section class="card hero grid grid-2 banner">
+      <div>
+        <h1>Associação Ferroviária de Esportes</h1>
+        <p class="muted">Popularmente conhecida como <b>Ferroviária</b> ou <b>AFE</b>. Clube de Araraquara, São Paulo, fundado em <b>12 de abril de 1950</b>. Cores: <b>vinho</b> e <b>branco</b>.</p>
+        <div>
+          <span class="pill">#AFE</span>
+          <span class="pill">Locomotiva</span>
+          <span class="pill">Orgulho de Araraquara</span>
+        </div>
+      </div>
+      <img src="../imagens/dkbirnlxcaeerpb.jpg-large.webp">
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="card">
+      <h2>História & Identidade</h2>
+      <p>A Ferroviária é um dos clubes mais tradicionais do interior paulista, famosa por revelar talentos e pela força de suas equipes no Campeonato Paulista. O time feminino é destaque nacional, conquistando títulos importantes e representando o Brasil em torneios internacionais.</p>
+      <ul>
+        <li><b>Apelido:</b> Locomotiva</li>
+        <li><b>Cidade:</b> Araraquara (SP), Brasil</li>
+        <li><b>Fundação:</b> 12/04/1950</li>
+        <li><b>Estádio:</b> Arena da Fonte Luminosa</li>
+      </ul>
+      <a class="btn" href="#titulos">Ver títulos</a>
+    </section>
+
+    <!-- Símbolos -->
+    <section id="simbolos" class="card grid grid-2">
+      <div>
+        <h2>Cores & Símbolos</h2>
+        <p>As cores oficiais são <b>vinho</b> e <b>branco</b>. O escudo traz as iniciais <b>AFE</b>, sendo um dos símbolos mais marcantes do interior paulista.</p>
+        <ul>
+          <li><b>Cores:</b> Vinho e Branco</li>
+          <li><b>Escudo:</b> Oval com AFE em destaque</li>
+          <li><b>Hino:</b> “Hino da Ferroviária” (versão oficial nas plataformas)</li>
+        </ul>
+      </div>
+      <figure class="card" style="margin:0">
+        <img src="../imagens/F10 (2).jpg"
+             alt="Escudo da Ferroviária (AFE)"
+             style="width:100%; height:220px; object-fit:contain; background:#fff; border-radius:14px;">
+        <figcaption class="muted" style="font-size:.9rem; padding-top:6px">Escudo oficial (uso ilustrativo).</figcaption>
+      </figure>
+    </section>
+
+    <!-- Títulos -->
+    <section id="titulos" class="card">
+      <h2>Títulos Selecionados</h2>
+      <p class="muted">Lista resumida de conquistas da Ferroviária.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Competição</th>
+            <th>Conquista</th>
+            <th>Observação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Campeonato Paulista Feminino</td>
+            <td>Diversas edições</td>
+            <td>AFE é referência no futebol feminino.</td>
+          </tr>
+          <tr>
+            <td>Copa Libertadores Feminina</td>
+            <td>2015 e 2020</td>
+            <td>Títulos continentais históricos.</td>
+          </tr>
+          <tr>
+            <td>Campeonato Paulista Série A2</td>
+            <td>2015</td>
+            <td>Conquista que marcou retorno à elite.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Estádio -->
+    <section id="estadio" class="card grid grid-2">
+      <div>
+        <h2>Arena da Fonte Luminosa</h2>
+        <p>A <b>Arena da Fonte Luminosa</b> é a casa da Ferroviária, localizada em Araraquara (SP). Um estádio histórico, palco de grandes jogos e celebrações da Locomotiva.</p>
+        <ul>
+          <li><b>Localização:</b> Araraquara, São Paulo</li>
+          <li><b>Capacidade:</b> Aproximadamente 25 mil torcedores</li>
+          <li><b>Uso:</b> Jogos oficiais e eventos esportivos</li>
+        </ul>
+      </div>
+      <figure class="card" style="margin:0">
+        <img src="../imagens/120575186-3906573286039100-6253713445686634495-o.webp"
+             alt="Estádio Arena da Fonte Luminosa (imagem ilustrativa)"
+             style="width:100%; height:220px; object-fit:cover; border-radius:14px;">
+        <figcaption class="muted" style="font-size:.9rem; padding-top:6px">Arena da Fonte Luminosa (ilustrativa).</figcaption>
+      </figure>
+    </section>
+
+    <!-- Redes -->
+    <section id="contato" class="card">
+      <h2>Redes oficiais (exemplo)</h2>
+      <p>Substitua pelos links oficiais:</p>
+      <ul>
+        <li>Site: <a href="#" rel="noopener">ferroviariasa.com</a></li>
+        <li>Instagram: <a href="#" rel="noopener">@afeoficial</a></li>
+        <li>Twitter/X: <a href="#" rel="noopener">@afeoficial</a></li>
+        <li>YouTube: <a href="#" rel="noopener">/AFEoficial</a></li>
+      </ul>
+      <a class="btn" href="#topo">Voltar ao topo</a>
+    </section>
+  </main>
+
+  <footer>
+    <small>Projeto fã, sem fins comerciais. © <span id="ano"></span> • Locomotiva em campo! 🚂</small>
+  </footer>
+
+  <script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

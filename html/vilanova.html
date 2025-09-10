@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vila Nova Futebol Clube — Página Fã</title>
+  <meta name="description" content="Página informativa de fã sobre o Vila Nova Futebol Clube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --vermelho:#c8102e;    /* vermelho tradicional */
+      --vermelho-escuro:#a30c25;
+      --branco:#ffffff;
+      --cinza:#f4f6f8;
+      --texto:#1f2937;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Montserrat, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans";
+      color:var(--texto);
+      background:var(--cinza);
+      line-height:1.6;
+    }
+    header{
+      position:sticky; top:0; z-index:50;
+      background:linear-gradient(90deg,var(--vermelho), var(--vermelho-escuro));
+      color:var(--branco);
+      padding:12px 16px;
+      box-shadow:0 4px 12px rgba(0,0,0,.15);
+    }
+    .nav{
+      max-width:1100px; margin:0 auto; display:flex; align-items:center; gap:16px;
+    }
+    .logo{
+      display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--branco);
+    }
+    .badge{
+      width:36px; height:36px; border-radius:50%;
+      border:2px solid #ffe8e8;
+      display:grid; place-items:center; font-weight:800;
+      background:#e01934;
+      box-shadow:0 2px 6px rgba(0,0,0,.25) inset;
+    }
+    .nav a{
+      color:var(--branco); text-decoration:none; font-weight:600; opacity:.95;
+      padding:8px 10px; border-radius:10px;
+    }
+    .nav a:hover{background:rgba(255,255,255,.12)}
+    main{max-width:1100px; margin:24px auto; padding:0 16px}
+    .card{
+      background:var(--branco); border-radius:20px; padding:22px;
+      box-shadow:0 6px 20px rgba(0,0,0,.08); margin-bottom:18px;
+    }
+    .grid{display:grid; gap:16px}
+    @media (min-width:900px){ .grid-2{grid-template-columns:1.2fr .8fr} }
+    h1,h2{margin:.2rem 0 .6rem}
+    h1{font-size:clamp(1.6rem,2.2vw,2.2rem)}
+    h2{font-size:clamp(1.2rem,1.8vw,1.6rem); color:var(--vermelho-escuro)}
+    .tag{
+      display:inline-block; background:#fce7e7; color:#7c0b1c; border:1px solid #f5b8b8;
+      padding:4px 8px; border-radius:999px; font-size:.85rem; font-weight:600; margin-right:6px
+    }
+    .hero{display:grid; gap:12px; align-items:center}
+    .hero img{
+      width:100%; height:280px; object-fit:cover; border-radius:18px;
+      box-shadow:0 6px 20px rgba(0,0,0,.12)
+    }
+    ul{padding-left:18px}
+    table{width:100%; border-collapse:collapse; overflow:hidden; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,.06)}
+    thead{background:#fdeaea}
+    th, td{padding:12px 14px; text-align:left; border-bottom:1px solid #edf2f7}
+    tbody tr:hover{background:#fdf7f7}
+    footer{text-align:center; padding:36px 16px; color:#4b5563}
+    .btn{
+      display:inline-block; border:none; background:var(--vermelho);
+      color:#fff; padding:10px 14px; border-radius:12px; cursor:pointer; font-weight:700; text-decoration:none
+    }
+    .btn:hover{background:var(--vermelho-escuro)}
+    .chips{display:flex; flex-wrap:wrap; gap:8px; margin:.4rem 0 0}
+    .muted{opacity:.75}
+    .banner{
+      background:linear-gradient(135deg,#e01934 0%, #c8102e 60%, #7c0b1c 100%);
+      color:white; border-radius:20px; padding:22px; box-shadow:0 8px 24px rgba(0,0,0,.18)
+    }
+    .pill{background:rgba(255,255,255,.15); padding:6px 10px; border-radius:999px; font-weight:700; margin-right:6px}
+    .divider{height:1px; background:#e5e7eb; margin:14px 0}
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a class="logo" href="#topo" aria-label="Voltar ao topo">
+        <span class="badge">VNF</span>
+        <strong>Vila Nova</strong>
+      </a>
+      <div style="margin-left:auto; display:flex; gap:4px; flex-wrap:wrap">
+        <a href="#sobre">Sobre</a>
+        <a href="#simbolos">Cores & Símbolos</a>
+        <a href="#titulos">Títulos</a>
+        <a href="#estadio">Estádio</a>
+        <a href="#contato">Redes</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="topo">
+    <!-- Hero -->
+    <section class="card hero grid grid-2 banner">
+      <div>
+        <h1>Vila Nova Futebol Clube</h1>
+        <p class="muted">Também conhecido como <b>Tigrão</b>, o clube é de Goiânia, Goiás, fundado em <b>29 de julho de 1943</b>. Suas cores são <b>vermelho</b> e <b>branco</b>.</p>
+        <div class="chips">
+          <span class="pill">#Tigrão</span>
+          <span class="pill">Colorado de Goiás</span>
+          <span class="pill">VNF</span>
+        </div>
+      </div>
+      <img src="../imagens/image.jpg">
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="card">
+      <h2>História & Identidade</h2>
+      <p>O Vila Nova é um dos clubes mais tradicionais de Goiás e do Centro-Oeste. Ao longo de sua história, conquistou diversos títulos estaduais e nacionais, consolidando sua torcida apaixonada como uma das mais presentes do Brasil.</p>
+      <ul>
+        <li><b>Apelido:</b> Tigrão</li>
+        <li><b>Cidade:</b> Goiânia (GO), Brasil</li>
+        <li><b>Fundação:</b> 29/07/1943</li>
+        <li><b>Estádio:</b> Onésio Brasileiro Alvarenga (OBA)</li>
+      </ul>
+      <div class="divider"></div>
+      <a class="btn" href="#titulos">Ver títulos</a>
+    </section>
+
+    <!-- Símbolos -->
+    <section id="simbolos" class="card grid grid-2">
+      <div>
+        <h2>Cores & Símbolos</h2>
+        <p>As cores oficiais são <b>vermelho</b> e <b>branco</b>. O escudo traz o nome <b>Vila Nova F.C.</b> em destaque, simbolizando a tradição do clube goiano.</p>
+        <ul>
+          <li><b>Cores:</b> Vermelho e Branco</li>
+          <li><b>Escudo:</b> Formato de escudo com o nome "Vila Nova F.C."</li>
+          <li><b>Hino:</b> “Hino do Vila Nova” (buscar versão oficial nas plataformas de áudio)</li>
+        </ul>
+      </div>
+      <div>
+        <figure class="card" style="margin:0">
+          <img src="../imagens/maxresdefault.jpg"
+               alt="Escudo do Vila Nova Futebol Clube"
+               style="width:100%; height:220px; object-fit:contain; background:#fff; border-radius:14px;">
+          <figcaption class="muted" style="font-size:.9rem; padding-top:6px">Escudo oficial (uso ilustrativo).</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Títulos -->
+    <section id="titulos" class="card">
+      <h2>Títulos Selecionados</h2>
+      <p class="muted">Lista resumida de conquistas de destaque (não exaustiva).</p>
+      <table aria-label="Tabela de títulos do Vila Nova">
+        <thead>
+          <tr>
+            <th>Competição</th>
+            <th>Conquista</th>
+            <th>Observação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Campeonato Brasileiro Série C</td>
+            <td>1996, 2015, 2020</td>
+            <td>Três conquistas nacionais.</td>
+          </tr>
+          <tr>
+            <td>Campeonato Goiano</td>
+            <td>Várias edições</td>
+            <td>Diversos títulos estaduais.</td>
+          </tr>
+          <tr>
+            <td>Campeonato Brasileiro Série B</td>
+            <td>Acessos</td>
+            <td>Campanhas de destaque e acessos à Série A.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Estádio -->
+    <section id="estadio" class="card grid grid-2">
+      <div>
+        <h2>Estádio Onésio Brasileiro Alvarenga (OBA)</h2>
+        <p>A casa do Vila Nova é o <b>OBA</b>, em Goiânia (GO). O estádio recebe partidas oficiais e eventos, sendo um ponto de encontro tradicional para a torcida colorada.</p>
+        <ul>
+          <li><b>Localização:</b> Goiânia, Goiás</li>
+          <li><b>Gramado:</b> Natural</li>
+          <li><b>Uso:</b> Jogos oficiais e eventos do clube</li>
+        </ul>
+      </div>
+      <figure class="card" style="margin:0">
+        <img src="../imagens/oba-estadio-onesio-brasileiro-alvarenga-106.jpg"
+             alt="Estádio Onésio Brasileiro Alvarenga (imagem ilustrativa)"
+             style="width:100%; height:220px; object-fit:cover; border-radius:14px;">
+        <figcaption class="muted" style="font-size:.9rem; padding-top:6px">Imagem ilustrativa do estádio.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Redes e contato -->
+    <section id="contato" class="card">
+      <h2>Redes oficiais (links de exemplo)</h2>
+      <p>Substitua pelos links oficiais do clube:</p>
+      <ul>
+        <li>Site: <a href="#" rel="noopener">vilanovafc.com.br</a></li>
+        <li>Instagram: <a href="#" rel="noopener">@vilanovafc</a></li>
+        <li>Twitter/X: <a href="#" rel="noopener">@VilaNovaFC</a></li>
+        <li>YouTube: <a href="#" rel="noopener">/VilaNovaFC</a></li>
+      </ul>
+      <a class="btn" href="#topo">Voltar ao topo</a>
+    </section>
+  </main>
+
+  <footer>
+    <small>Projeto fã, sem fins comerciais. © <span id="ano"></span> • Vila, minha vida! 🔴⚪</small>
+  </footer>
+
+  <script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

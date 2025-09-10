@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cuiabá Esporte Clube — Página Fã</title>
+  <meta name="description" content="Página informativa de fã sobre o Cuiabá Esporte Clube." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --verde:#0c7d3f;      /* verde tradicional */
+      --amarelo:#f4d300;    /* amarelo oficial */
+      --verde-escuro:#095b2e;
+      --branco:#ffffff;
+      --cinza:#f4f6f8;
+      --texto:#1f2937;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Montserrat, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+      color:var(--texto);
+      background:var(--cinza);
+      line-height:1.6;
+    }
+    /* Cabeçalho fixo */
+    header{
+      position:sticky; top:0; z-index:50;
+      background:linear-gradient(90deg,var(--verde), var(--amarelo));
+      color:var(--branco);
+      padding:12px 16px;
+      box-shadow:0 4px 12px rgba(0,0,0,.15);
+    }
+    .nav{
+      max-width:1100px; margin:0 auto; display:flex; align-items:center; gap:16px;
+    }
+    .logo{
+      display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--branco);
+    }
+    .badge{
+      width:36px; height:36px; border-radius:50%;
+      border:2px solid #fffde8;
+      display:grid; place-items:center; font-weight:800;
+      background:var(--amarelo);
+      box-shadow:0 2px 6px rgba(0,0,0,.25) inset;
+      color:#0c7d3f;
+    }
+    .nav a{
+      color:var(--branco); text-decoration:none; font-weight:600; opacity:.95;
+      padding:8px 10px; border-radius:10px;
+    }
+    .nav a:hover{background:rgba(255,255,255,.12)}
+    main{max-width:1100px; margin:24px auto; padding:0 16px}
+    /* Card base */
+    .card{
+      background:var(--branco); border-radius:20px; padding:22px;
+      box-shadow:0 6px 20px rgba(0,0,0,.08); margin-bottom:18px;
+    }
+    .grid{display:grid; gap:16px}
+    @media (min-width:900px){ .grid-2{grid-template-columns:1.2fr .8fr} }
+    h1,h2{margin:.2rem 0 .6rem}
+    h1{font-size:clamp(1.6rem,2.2vw,2.2rem)}
+    h2{font-size:clamp(1.2rem,1.8vw,1.6rem); color:var(--verde)}
+    .tag{
+      display:inline-block; background:#fffbdc; color:#105c34; border:1px solid #f5e77a;
+      padding:4px 8px; border-radius:999px; font-size:.85rem; font-weight:600; margin-right:6px
+    }
+    .hero{
+      display:grid; gap:12px; align-items:center
+    }
+    .hero img{
+      width:100%; height:280px; object-fit:cover; border-radius:18px;
+      box-shadow:0 6px 20px rgba(0,0,0,.12)
+    }
+    ul{padding-left:18px}
+    /* Tabela simples */
+    table{width:100%; border-collapse:collapse; overflow:hidden; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,.06)}
+    thead{background:#fffbdc}
+    th, td{padding:12px 14px; text-align:left; border-bottom:1px solid #edf2f7}
+    tbody tr:hover{background:#fafbe7}
+    /* Rodapé */
+    footer{
+      text-align:center; padding:36px 16px; color:#4b5563
+    }
+    .btn{
+      display:inline-block; border:none; background:var(--verde);
+      color:#fff; padding:10px 14px; border-radius:12px; cursor:pointer; font-weight:700; text-decoration:none
+    }
+    .btn:hover{background:var(--verde-escuro)}
+    .chips{display:flex; flex-wrap:wrap; gap:8px; margin:.4rem 0 0}
+    .muted{opacity:.75}
+    .banner{
+      background:linear-gradient(135deg,#0c7d3f 0%, #f4d300 60%, #095b2e 100%);
+      color:white; border-radius:20px; padding:22px; box-shadow:0 8px 24px rgba(0,0,0,.18)
+    }
+    .pill{background:rgba(255,255,255,.15); padding:6px 10px; border-radius:999px; font-weight:700; margin-right:6px}
+    .divider{height:1px; background:#e5e7eb; margin:14px 0}
+  </style>
+</head>
+<body>
+  <!-- Navegação -->
+  <header>
+    <nav class="nav">
+      <a class="logo" href="#topo" aria-label="Voltar ao topo">
+        <span class="badge">CEC</span>
+        <strong>Cuiabá</strong>
+      </a>
+      <div style="margin-left:auto; display:flex; gap:4px; flex-wrap:wrap">
+        <a href="#sobre">Sobre</a>
+        <a href="#simbolos">Cores & Símbolos</a>
+        <a href="#titulos">Títulos</a>
+        <a href="#estadio">Estádio</a>
+        <a href="#contato">Redes</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="topo">
+    <!-- Hero -->
+    <section class="card hero grid grid-2 banner">
+      <div>
+        <h1>Cuiabá Esporte Clube</h1>
+        <p class="muted">Também conhecido como <b>Dourado</b>. Clube de Cuiabá, Mato Grosso, fundado em <b>12 de dezembro de 2001</b>. Cores: <b>verde</b> e <b>amarelo</b>.</p>
+        <div class="chips">
+          <span class="pill">#OrgulhoMatogrossense</span>
+          <span class="pill">Dourado</span>
+          <span class="pill">CEC</span>
+        </div>
+      </div>
+      <img src="../imagens/0002050432914_img.jpg">
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="card">
+      <h2>História & Identidade</h2>
+      <p>O Cuiabá Esporte Clube vem crescendo no cenário nacional nos últimos anos, conquistando espaço na elite do futebol brasileiro com campanhas consistentes e um projeto sólido.</p>
+      <ul>
+        <li><b>Apelido:</b> Dourado</li>
+        <li><b>Cidade:</b> Cuiabá (MT), Brasil</li>
+        <li><b>Fundação:</b> 12/12/2001</li>
+        <li><b>Estádio:</b> Arena Pantanal</li>
+      </ul>
+      <div class="divider"></div>
+      <a class="btn" href="#titulos">Ver títulos</a>
+    </section>
+
+    <!-- Símbolos -->
+    <section id="simbolos" class="card grid grid-2">
+      <div>
+        <h2>Cores & Símbolos</h2>
+        <p>As cores oficiais são <b>verde</b> e <b>amarelo</b>. O escudo traz as iniciais <b>CEC</b> com destaque, simbolizando força e identidade do estado de Mato Grosso.</p>
+        <ul>
+          <li><b>Cores:</b> Verde e Amarelo</li>
+          <li><b>Escudo:</b> CEC em destaque, com design moderno</li>
+          <li><b>Hino:</b> “Hino do Cuiabá” (buscar versão oficial nas plataformas de áudio)</li>
+        </ul>
+      </div>
+      <div>
+        <figure class="card" style="margin:0">
+          <img src="../imagens/amp-20140817-280469-Cuiaba-X-Fortaleza-1424.jpg"
+               alt="Escudo do Cuiabá Esporte Clube (CEC)"
+               style="width:100%; height:220px; object-fit:contain; background:#fff; border-radius:14px;">
+          <figcaption class="muted" style="font-size:.9rem; padding-top:6px">Escudo oficial (uso ilustrativo).</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Títulos -->
+    <section id="titulos" class="card">
+      <h2>Títulos Selecionados</h2>
+      <p class="muted">Lista resumida de conquistas (não exaustiva).</p>
+      <table aria-label="Tabela de títulos do Cuiabá">
+        <thead>
+          <tr>
+            <th>Competição</th>
+            <th>Conquista</th>
+            <th>Observação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Campeonato Brasileiro Série C</td>
+            <td>2018</td>
+            <td>Título nacional marcante.</td>
+          </tr>
+          <tr>
+            <td>Campeonato Mato-Grossense</td>
+            <td>Várias edições</td>
+            <td>Maior campeão estadual do século XXI.</td>
+          </tr>
+          <tr>
+            <td>Acesso à Série A</td>
+            <td>2020</td>
+            <td>Estreia histórica na elite do Brasileirão.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Estádio -->
+    <section id="estadio" class="card grid grid-2">
+      <div>
+        <h2>Arena Pantanal</h2>
+        <p>A <b>Arena Pantanal</b> é a casa do Cuiabá, localizada em Cuiabá (MT). Sediou jogos da Copa do Mundo de 2014 e hoje é palco das partidas oficiais do Dourado.</p>
+        <ul>
+          <li><b>Localização:</b> Cuiabá, Mato Grosso</li>
+          <li><b>Gramado:</b> Natural</li>
+          <li><b>Uso:</b> Jogos oficiais e eventos esportivos</li>
+        </ul>
+      </div>
+      <figure class="card" style="margin:0">
+        <img src="../imagens/agif22060722292164.webp"
+             alt="Arquibancadas da Arena Pantanal (imagem ilustrativa)"
+             style="width:100%; height:220px; object-fit:cover; border-radius:14px;">
+        <figcaption class="muted" style="font-size:.9rem; padding-top:6px">Imagem ilustrativa da Arena Pantanal.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Redes e contato -->
+    <section id="contato" class="card">
+      <h2>Redes oficiais (links de exemplo)</h2>
+      <p>Substitua pelos links oficiais do clube:</p>
+      <ul>
+        <li>Site: <a href="#" rel="noopener">cuiabaesporteclube.com.br</a></li>
+        <li>Instagram: <a href="#" rel="noopener">@cuiabaec</a></li>
+        <li>Twitter/X: <a href="#" rel="noopener">@CuiabaEC</a></li>
+        <li>YouTube: <a href="#" rel="noopener">/CuiabaEC</a></li>
+      </ul>
+      <a class="btn" href="#topo">Voltar ao topo</a>
+    </section>
+  </main>
+
+  <footer>
+    <small>Projeto fã, sem fins comerciais. © <span id="ano"></span> • Verde e amarelo, sempre! 💚💛</small>
+  </footer>
+
+  <script>
+    // Atualiza o ano no rodapé
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
